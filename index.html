@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">Кликни</button>
+    <section class="pop-up hidden">
+        <div class="wrapper">
+            <h2 class="pop-header">Получите набор файлов для руководителя:</h2>
+            <div class="img-container">
+                <div class="img"></div>
+                <ul class="pop-list">
+                    <li class="item-list doc"></li>
+                    <li class="item-list xls"></li>
+                    <li class="item-list"></li>
+                    <li class="item-list"></li>
+                    <li class="item-list"></li>
+                    <li class="item-list"></li>
+                    <li class="item-list"></li>
+                </ul>
+            </div>
+            <form class="pop-form" action="mail.php" method="POST">
+                <label for="email">Введите Email для получения файлов:</label>
+                <input type="email" required name="email" placeholder="E-mail">
+                <label for="tel">Введите телефон для подтверждения доступа:</label>
+                <input type="tel" required name="tel" placeholder="+7 (000) 000-00-00">
+                <button class="btn-form" type="submit">Скачать файлы</button>
+                <ul class="size-list">
+                    <li class="size-item">PDF 4,7 MB</li>
+                    <li class="size-item">DOC 0,8 MB</li>
+                    <li class="size-item">XLS 1,2 MB</li>
+                </ul>
+            </form>
+            <button class="close"></button>
+        </div>
+    </section>
+</body>
+<script src="js/script.js"></script>
+</html>
